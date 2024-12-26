@@ -47,7 +47,7 @@ function Navbar() {
                         </li>
                         <li>
                             <Link to='/download' className='nav-links-mobile' onClick={closeMobileMenu}>
-                                Get Evenly
+                                Get Evenly 
                             </Link>
                         </li>
                     </ul>
