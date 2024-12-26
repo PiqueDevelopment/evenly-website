@@ -20,6 +20,7 @@
     background-color: transparent;
     color: var(--primary);
     padding: 8px 20px;
+    margin-left: -15%;
     border: 1px solid var(--primary);
     transition: all 0.3s ease-out;
 }

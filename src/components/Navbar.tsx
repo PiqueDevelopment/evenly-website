@@ -31,11 +31,11 @@ function Navbar() {
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li className='nav-item'>
+                        {/* <li className='nav-item'>
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                                 Home
                             </Link>
-                        </li>
+                        </li> */}
                         <li className='nav-item'>
                             <Link to='/docs' className='nav-links' onClick={closeMobileMenu}>
                                 Docs
@@ -47,7 +47,7 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>ABOUT</Button>}
+                    {button && <Button buttonStyle='btn--outline'>Get Evenly</Button>}
                 </div>
             </nav>
         </>
