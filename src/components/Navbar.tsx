@@ -28,7 +28,7 @@ function Navbar() {
         <>
             <nav className='navbar'>
                 <div className='navbar-container'>
-                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+                    <Link to='/evenly-website' className='navbar-logo' onClick={closeMobileMenu}>
                         Evenly <i className='fab fa-typo3'></i>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
@@ -51,7 +51,7 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                        {button && <Button buttonStyle='btn--outline' children={undefined} type={undefined} onClick={undefined} buttonSize={undefined}>Get Evenly</Button>}
+                        {button && <Button to='/download' buttonStyle='btn--outline' children={undefined} type={undefined} onClick={undefined} buttonSize={undefined}>Get Evenly</Button>}
                 </div>
             </nav>
         </>

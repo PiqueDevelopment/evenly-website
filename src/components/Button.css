@@ -25,6 +25,13 @@
     transition: all 0.3s ease-out;
 }
 
+.btn--download {
+    background-color: var(--primary);
+    color: #242424;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+}
+
 .btn--medium {
     padding: 8px 20px;
     font-size: 20px;
@@ -38,5 +45,11 @@
 .btn--medium:hover, .btn--large:hover {
     background-color: #ffffff;
     color: #242424;
+    transition: all 0.3s ease-out;
+}
+
+.btn--download:hover {
+    background-color: #525252;
+    color: #ffffff;
     transition: all 0.3s ease-out;
 }
