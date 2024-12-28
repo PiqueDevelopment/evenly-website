@@ -4,7 +4,7 @@ video {
     height: 100%;
     position: fixed;
     z-index: -1;
-    filter: brightness(0.09) contrast(0.75); /* Adjust the brightness value as needed */
+    filter: brightness(0.09) contrast(0.8); /* Adjust the brightness value as needed */
 }
 .hero-container{
     /* background: url() center center/cover no-repeat; */
