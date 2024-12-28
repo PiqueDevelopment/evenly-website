@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar.tsx';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.tsx';
 import Docs from './pages/Docs.tsx';
 import About from './pages/About.tsx';
@@ -9,8 +9,6 @@ import Download from './pages/Download.tsx';
 
 
 function App() {
-  const basename = process.env.NODE_ENV === 'production' ? '/evenly-website' : '';
-
   return (
       <div className="App">
         <Navbar />
