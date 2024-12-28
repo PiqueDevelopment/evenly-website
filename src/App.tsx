@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar.tsx';
+import Footer from './components/Footer.tsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.tsx';
 import Docs from './pages/Docs.tsx';
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/download" element={<Download />} />
         </Routes>
+        <Footer />
       </div>
   );
 }
