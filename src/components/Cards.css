@@ -1,6 +1,6 @@
 .cards {
-    padding: 4rem;
-    background: #1a1a1a;
+    /* padding: 4rem; */
+    background: #262626;
   }
   
   h1 {
@@ -11,14 +11,13 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: 1120px;
     width: 90%;
     margin: 0 auto;
   }
   
   .cards__wrapper {
     position: relative;
-    margin: 50px 0 45px;
+    margin: 0px 0 45px;
   }
   
   .cards__items {
@@ -30,13 +29,15 @@
   
   .cards__item {
     display: flex;
-    flex: 1 1 calc(33.333% - 2rem);
-    margin: 0 1rem;
+    margin: 0 30px 0;
     border-radius: 10px;
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(59, 59, 59);
+    width: calc(33.333% - 60px); /* Adjust width to fit three cards per row */
+    max-width: 500px; /* Optional: set a max-width */
+    flex: 1 1 auto; 
   }
   
-  .cards__item__link {
+  /* .cards__item__link {
     display: flex;
     flex-flow: column;
     width: 100%;
@@ -46,7 +47,7 @@
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
-  }
+  } */
   
   /* .cards__item__pic-wrap {
     position: relative;
@@ -63,8 +64,8 @@
   }
 
   .cards__item__icon-wrap i {
-    font-size: 3rem; /* Adjust the size as needed */
-    color: #262626; /* Adjust the color as needed */
+    font-size: 2rem; 
+    color: #526fcf; 
   }
   
   .fade-img {
@@ -91,13 +92,26 @@
   }
   
   .cards__item__info {
-    padding: 20px 30px 30px;
+    padding: 20px 0px 30px;
+    margin-right: 40px;
   }
   
   .cards__item__text {
-    color: #252e48;
-    font-size: 18px;
+    color: #ffffff;
+    font-size: 20px;
     line-height: 24px;
+    text-align: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+
+  .cards__item__desc {
+    color: #9c9c9c;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 20px;
+    text-align: left;
+    margin-right: -8px;
   }
   
   @media only screen and (min-width: 1200px) {
@@ -110,10 +124,16 @@
     .cards__items {
       display: flex;
     }
-  }
-  
-  @media only screen and (max-width: 1024px) {
-    .cards__item {
-      margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .cards__items {
+      display: block;
     }
-  }
+    .cards__item {
+      margin: 20px auto;
+      width: 80%; 
+      max-width: 600px;
+      padding: 0px 10px 0px;
+    }
+}
