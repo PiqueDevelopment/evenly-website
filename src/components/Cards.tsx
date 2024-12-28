@@ -6,31 +6,34 @@ function Cards() {
   return (
     <div className='cards'>
         <h1>Placeholder Text</h1>
-        <div className='cards-container'>
-            <div className='cards-wrapper'>
+        <div className='cards__container'>
+            <div className='cards__wrapper'>
                 <ul className="cards__items">
-                    <CardItem 
-                        src='images/placeholder.jpg'
-                        text='Placeholder Text'
-                        // label='Placeholder Text'
-                        path='/placeholder'
-                    />
-                </ul>
-                <ul className="cards__items">
-                    <CardItem 
-                        src='images/placeholder.jpg'
-                        text='Placeholder Text'
-                        // label='Placeholder Text'
-                        path='/placeholder'
-                    />
-                </ul>
-                <ul className="cards__items">
-                    <CardItem 
-                        src='images/placeholder.jpg'
-                        text='Placeholder Text'
-                        // label='Placeholder Text'
-                        path='/placeholder'
-                    />
+                    <li className="cards__item">
+                        <CardItem 
+                            icon={<i className="fa fa-download" />}
+                            text='Placeholder Text'
+                            link={false}
+                            // label='Placeholder Text'
+                            // path='/placeholder'
+                        />
+                    </li>
+                    <li className="cards__item">
+                        <CardItem 
+                            src='images/placeholder.jpg'
+                            text='Placeholder Text'
+                            // label='Placeholder Text'
+                            // path='/placeholder'
+                        />
+                    </li>
+                    <li className="cards__item">
+                        <CardItem 
+                            src='images/placeholder.jpg'
+                            text='Placeholder Text'
+                            // label='Placeholder Text'
+                            // path='/placeholder'
+                        />
+                    </li>
                 </ul>
             </div>
         </div>

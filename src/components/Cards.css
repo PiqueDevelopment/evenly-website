@@ -1,6 +1,6 @@
 .cards {
     padding: 4rem;
-    background: #262626;
+    background: #1a1a1a;
   }
   
   h1 {
@@ -22,15 +22,18 @@
   }
   
   .cards__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 24px;
   }
   
   .cards__item {
     display: flex;
-    flex: 1;
+    flex: 1 1 calc(33.333% - 2rem);
     margin: 0 1rem;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(78, 78, 78);
   }
   
   .cards__item__link {
@@ -45,18 +48,29 @@
     text-decoration: none;
   }
   
-  .cards__item__pic-wrap {
+  /* .cards__item__pic-wrap {
     position: relative;
     width: 100%;
     padding-top: 67%;
     overflow: hidden;
+  } */
+
+  .cards__item__icon-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 10%;
+    overflow: hidden;
+  }
+
+  .cards__item__icon-wrap i {
+    font-size: 3rem; /* Adjust the size as needed */
+    color: #262626; /* Adjust the color as needed */
   }
   
   .fade-img {
     animation-name: fade-img;
     animation-duration: 2s;
   }
-  
   .cards__item__img {
     position: absolute;
     top: 0;
