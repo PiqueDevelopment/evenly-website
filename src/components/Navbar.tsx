@@ -28,7 +28,7 @@ function Navbar() {
         <>
             <nav className='navbar'>
                 <div className='navbar-container'>
-                    <Link to='/evenly-website' className='navbar-logo' onClick={closeMobileMenu}>
+                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                         Evenly <i className='fab fa-typo3'></i>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>

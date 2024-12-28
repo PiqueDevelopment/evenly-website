@@ -3,20 +3,24 @@ import './App.css';
 import Navbar from './components/Navbar.tsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.tsx';
-// import Docs from './pages/Docs';
-// import About from './pages/About';
+import Docs from './pages/Docs.tsx';
+import About from './pages/About.tsx';
+import Download from './pages/Download.tsx';
 
 
 function App() {
+  const basename = process.env.NODE_ENV === 'production' ? '/evenly-website' : '';
+
   return (
-    <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/evenly-website" Component={Home}/>
-        {/* <Route path="/docs" element={<Docs />} />
-        <Route path="/about" element={<About />} /> */}
-      </Routes>
-    </div>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/docs" element={<Docs />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/download" element={<Download />} />
+        </Routes>
+      </div>
   );
 }
 
