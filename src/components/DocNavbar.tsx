@@ -1,6 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './DocNavbar.css';
-import  { DocNavbarData } from './DocNavbarData.tsx';
+import { DocNavbarData } from './DocNavbarData.tsx';
 
 function DocNavbar() {
     return (
@@ -8,13 +9,14 @@ function DocNavbar() {
             <div className='sidebar'>
                 <ul className='sidebar-list'>
                     {DocNavbarData.map((val, key) => (
-                        <li className='row'>
-                            <div className='sidebar-text'
-                            key={key} 
-                            onClick={() => { window.location.pathname = val.link }}
+                        <li className='row' key={key}>
+                            <NavLink 
+                                to={val.link} 
+                                className='sidebar-text' 
+                                activeClassName='active'
                             >
                                 {val.title}
-                            </div>
+                            </NavLink>
                         </li>
                     ))}
                 </ul>

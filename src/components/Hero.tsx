@@ -13,7 +13,7 @@ function Hero() {
           Split bills, track expenses, settle balances - all natively within your Google Sheets.
         </p>
         <div className='hero-btns'>
-            <Button to='/docs' className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>Get Started</Button>
+            <Button to='/docs/getting-started' className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>Get Started</Button>
             <Button to='/download' className='btns' buttonStyle='btn--download' buttonSize='btn--large'>Download <i className="fa fa-download"/> </Button>
         </div>
     </div>
