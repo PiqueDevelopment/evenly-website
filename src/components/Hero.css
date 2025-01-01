@@ -6,6 +6,7 @@ video {
     z-index: -1;
     filter: brightness(0.09) contrast(0.8);
 }
+
 .hero-container{
     /* background: url() center center/cover no-repeat; */
     /* background-color: #312f30; */

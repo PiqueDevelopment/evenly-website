@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar.tsx';
 import Footer from './components/Footer.tsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.tsx';
@@ -12,14 +11,12 @@ import Download from './pages/Download.tsx';
 function App() {
   return (
       <div className="App">
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/docs" element={<Docs />} />
           <Route path="/about" element={<About />} />
           <Route path="/download" element={<Download />} />
         </Routes>
-        <Footer />
       </div>
   );
 }
