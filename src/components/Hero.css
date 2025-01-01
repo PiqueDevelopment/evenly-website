@@ -4,7 +4,7 @@ video {
     height: 100%;
     position: fixed;
     z-index: -1;
-    filter: brightness(0.09) contrast(0.8); /* Adjust the brightness value as needed */
+    filter: brightness(0.09) contrast(0.8);
 }
 .hero-container{
     /* background: url() center center/cover no-repeat; */
@@ -49,7 +49,7 @@ video {
 
 @media screen and (max-width: 960px) {
     .hero-container > h1{
-        font-size: 70px;
+        font-size: 5em;
         margin-top: -150px;
         margin-left: 18px;
     }
@@ -60,11 +60,20 @@ video {
         font-size: 25px;
         text-align: center;
     }
+
+    video {
+        display: none;
+    }
+    
+    .hero-container{
+        background-color: #312f30;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
     .hero-container > h1 {
-        font-size: 5cqh;
+        font-size: 4em;
         margin-top: -100px;
     }
 
