@@ -1,12 +1,20 @@
-.doc-content {
-    margin-top: 2%;
-    margin-left: 6%;
-    margin-right: 6%;
+.doc-content {    
     flex-grow: 1;
+    width: 100%;
     padding: 20px; 
     background-color: #262626; 
     color: #000; 
     overflow-y: auto;
+}
+
+.doc-content h1,
+.doc-content h2,
+.doc-content h3,
+.doc-content h4,
+.doc-content h5,
+.doc-content h6,
+.doc-content p {
+    margin-left: 2%;
 }
 
 .doc-content h1 {
@@ -53,4 +61,6 @@
     background-color: rgb(58, 58, 58);
     border-radius: 5px;
     margin: 50px 0; 
+    margin-left: 2%;
+    margin-right: 2%;
 }

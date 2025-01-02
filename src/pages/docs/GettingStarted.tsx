@@ -27,6 +27,15 @@ function GettingStarted() {
               <li>Instructions for this will soon be available.</li>
             </ul>
           </p>
+          <hr className='doc-divider' />
+          <h2>Additional Setup</h2>
+          <p>Ensure that there exists a sheet titled EXACTLY 'People', with individuals from your organization listed by Name and Email.</p>
+          <p>
+            <ul>
+              <li>If cloned from a Google Sheet, the 'People' sheet will already be provided.</li>
+              <li>Otherwise, you will have to create the sheet yourself.</li>
+            </ul>
+          </p>
         </div>
     </div>
   );
