@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    height: 100vh; 
+    height: 100vh;
     background-color: #262626;
 }
 
@@ -11,6 +11,7 @@
     padding-top: 20px; 
     flex-shrink: 0; 
     overflow-y: auto;
+    overflow-x: auto;
 }
 
 .sidebar-list {
@@ -19,6 +20,33 @@
     width: 100%;
 }
 
+.sidebar-home {
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    height: 40px;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sidebar-home:hover{
+    color: rgb(141, 151, 211);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+hr.rounded {
+    border: none;
+    height: 2px; 
+    background-color: rgb(58, 58, 58);
+    border-radius: 5px;
+    max-width: 90%;
+    margin: 15px 0; 
+}
 .sidebar-list .row {
     width: 100%;
     height: 40px;

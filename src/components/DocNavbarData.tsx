@@ -1,9 +1,5 @@
 export const DocNavbarData = [
     {
-        title: "Evenly",
-        link: "/"
-    },
-    {
         title: "Getting Started",
         link: "/docs/getting-started"
     },
@@ -66,6 +62,22 @@ export const DocNavbarData = [
     {
         title: "Placeholder Title 16",
         link: "Placeholder Link"
-    }
+    },
+    {
+        title: "Placeholder Title 17",
+        link: "Placeholder Link"
+    },
+    {
+        title: "Placeholder Title 18",
+        link: "Placeholder Link"
+    },
+    {
+        title: "Placeholder Title 19",
+        link: "Placeholder Link"
+    },
+    {
+        title: "Placeholder Title 20",
+        link: "Placeholder Link"
+    },
 
 ]
