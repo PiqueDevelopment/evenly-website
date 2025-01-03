@@ -7,6 +7,7 @@ function GettingStarted() {
     <div className='container'>
         <DocNavbar />
         <div className='doc-content'>
+          <div className='spacer'/>
           <h1>Getting Started</h1>
           <p>Essential information to get you started with Evenly.</p>
           <hr className='doc-divider' />
@@ -29,13 +30,19 @@ function GettingStarted() {
           </p>
           <hr className='doc-divider' />
           <h2>Additional Setup</h2>
-          <p>Ensure that there exists a sheet titled EXACTLY 'People', with individuals from your organization listed by Name and Email.</p>
-          <p>
-            <ul>
-              <li>If cloned from a Google Sheet, the 'People' sheet will already be provided.</li>
-              <li>Otherwise, you will have to create the sheet yourself.</li>
-            </ul>
-          </p>
+          <h3>Authorization</h3>
+          <p>If this is your first time running the program, please navigate to a new Sheet. Then, click on Bill Splitting &#x003E; Add Entry and follow the prompts to authorize the script to run on your Google Account.</p>
+          <div className="warning">
+            <h3>WARNING</h3>
+            <p>Ensure that there exists a sheet titled EXACTLY 'People', with individuals from your organization listed by Name and Email.</p>
+            <p>
+              <ul>
+                <li>If cloned from a Google Sheet, the 'People' sheet will already be provided.</li>
+                <li>Otherwise, you will have to create the sheet yourself.</li>
+              </ul>
+            </p>
+          </div>
+          <div className='spacer'/>
         </div>
     </div>
   );

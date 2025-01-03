@@ -5,16 +5,24 @@
     background-color: #262626; 
     color: #000; 
     overflow-y: auto;
+    margin-left: 4%;
+}
+
+.doc-content.full-width {
+    margin-left: 0;
+}
+
+.spacer {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .doc-content h1,
 .doc-content h2,
 .doc-content h3,
-.doc-content h4,
-.doc-content h5,
-.doc-content h6,
-.doc-content p {
-    margin-left: 2%;
+.doc-content p,
+.doc-content li {
+    margin-right: 4%;
 }
 
 .doc-content h1 {
@@ -36,21 +44,26 @@
     color: #e6e6e6;
     text-align: left;
     font-size: 23px;
-    margin-top: 45px;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
 .doc-content p {
-    color: #acacac;
+    color: #c2c2c2;
+    line-height: 1.6;
     text-align: left;
     font-size: 17px;
     margin-bottom: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.doc-content ul {
+    margin-top: -10px;
+    margin-left: 30px;
+    line-height: 1.8;
+}
+
 .doc-content li {
-    margin-left: 20px;
-    padding: 5px;
     list-style: number;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -61,6 +74,30 @@
     background-color: rgb(58, 58, 58);
     border-radius: 5px;
     margin: 50px 0; 
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-right: 4%;
+}
+
+.warning {
+    background-color: #3e341b;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 4%;
+    border: 2px solid #4e4120;
+    margin-bottom: 20px;
+}
+
+/* Styles for tablets (600px to 768px) */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .doc-content {
+        margin-left: -240px;
+        width: 100%;
+    }
+}
+
+/* Styles for phones (less than 600px) */
+@media screen and (max-width: 599px) {
+    .doc-content {
+        margin-left: -240px;
+        width: 100%;
+    }
 }
