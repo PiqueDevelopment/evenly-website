@@ -44,5 +44,14 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      // Handle the redirection from the 404 page
+      (function() {
+        var redirect = new URLSearchParams(window.location.search).get('redirect');
+        if (redirect) {
+          window.history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </body>
 </html>
