@@ -5,6 +5,7 @@
     background-color: #262626; 
     color: #000; 
     overflow-y: auto;
+    overflow-x: hidden;
     margin-left: 4%;
 }
 

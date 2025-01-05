@@ -17,6 +17,12 @@ function DocNavbar() {
         }
     };
 
+    const handleScroll = () => {
+        if (sidebarRef.current) {
+            sessionStorage.setItem('sidebarScrollPosition', sidebarRef.current.scrollTop);
+        }
+    };
+
     useEffect(() => {
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
@@ -24,10 +30,17 @@ function DocNavbar() {
         };
     }, []);
 
+    useEffect(() => {
+        const savedScrollPosition = sessionStorage.getItem('sidebarScrollPosition');
+        if (sidebarRef.current && savedScrollPosition !== null) {
+            sidebarRef.current.scrollTop = parseInt(savedScrollPosition, 10);
+        }
+    }, []);
+
     return (
         <div className={`container ${sidebarOpen ? '' : 'full-width'}`}>
             {sidebarOpen && <div className="overlay" onClick={toggleSidebar}></div>}
-            <div ref={sidebarRef} className={`sidebar ${sidebarOpen ? 'active' : ''}`}>
+            <div ref={sidebarRef} className={`sidebar ${sidebarOpen ? 'active' : ''}`} onScroll={handleScroll}>
                 <ul className='sidebar-list'>
                     <li>
                         <NavLink 
