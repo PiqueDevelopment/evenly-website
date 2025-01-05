@@ -39,6 +39,15 @@
     width: 100%;
 }
 
+.sidebar-list .divider {
+    border: none;
+    height: 2px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 5px;
+    max-width: 90%;
+    margin: 15px 0;
+}
+
 .sidebar-home {
     width: 100%;
     color: white;

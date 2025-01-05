@@ -12,8 +12,12 @@ export const DocNavbarData = [
         link: "/docs/edit-entry"
     },
     {
-        title: "Placeholder Title 4",
-        link: "Placeholder Link"
+        title: "File Upload",
+        link: "/docs/file-upload"
+    },
+    {
+        title: "divider", 
+        link: "#"
     },
     {
         title: "Placeholder Title 5",
@@ -79,5 +83,4 @@ export const DocNavbarData = [
         title: "Placeholder Title 20",
         link: "Placeholder Link"
     },
-
 ]

@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import GettingStarted from './pages/docs/GettingStarted.tsx';
 import AddEntry from './pages/docs/AddEntry.tsx';
 import EditEntry from './pages/docs/EditEntry.tsx';
+import FileUpload from './pages/docs/FileUpload.tsx';
 
 function DocRoutes() {
     return (
@@ -11,6 +12,7 @@ function DocRoutes() {
         <Route path="getting-started" element={<GettingStarted />} />
         <Route path="add-entry" element={<AddEntry />} />
         <Route path="edit-entry" element={<EditEntry />} />
+        <Route path="file-upload" element={<FileUpload />} />
         {/* Add other doc routes here */}
       </Routes>
     );

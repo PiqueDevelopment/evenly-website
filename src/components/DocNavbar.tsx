@@ -40,15 +40,19 @@ function DocNavbar() {
                     </li>
                     <hr className='rounded' />
                     {DocNavbarData.map((val, key) => (
-                        <li className='row' key={key}>
-                            <NavLink 
-                                to={val.link} 
-                                className='sidebar-text' 
-                                activeClassName='active'
-                            >
-                                {val.title}
-                            </NavLink>
-                        </li>
+                        val.title === "divider" ? (
+                            <li key={key} className='divider'></li>
+                        ) : (
+                            <li className='row' key={key}>
+                                <NavLink 
+                                    to={val.link} 
+                                    className='sidebar-text' 
+                                    activeClassName='active'
+                                >
+                                    {val.title}
+                                </NavLink>
+                            </li>
+                        )
                     ))}
                 </ul>
             </div>

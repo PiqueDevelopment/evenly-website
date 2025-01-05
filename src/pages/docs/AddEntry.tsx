@@ -40,7 +40,7 @@ function AddEntry() {
             </ul>
           </p>
           <h3>Submitting the Form</h3>
-          <p>Upon form submission, the entry will take a moment to be entered into the Google Sheet, along with a Unique ID and automated formatting</p>
+          <p>Upon form submission, the entry will take a moment to be entered into the Google Sheet, along with a Unique ID and automated formatting.</p>
           <p>This entry will now be available to edit through the Edit Entry feature.</p>
           <div className='spacer'/>
         </div>
