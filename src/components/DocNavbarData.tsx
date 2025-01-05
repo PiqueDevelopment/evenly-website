@@ -20,8 +20,8 @@ export const DocNavbarData = [
         link: "#"
     },
     {
-        title: "Placeholder Title 5",
-        link: "Placeholder Link"
+        title: "Split Types",
+        link: "/docs/split-types"
     },
     {
         title: "Placeholder Title 6",
