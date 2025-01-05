@@ -62,10 +62,6 @@ video {
         text-align: center;
     }
 
-    video {
-        display: none;
-    }
-    
     .hero-container{
         background-color: #312f30;
     }

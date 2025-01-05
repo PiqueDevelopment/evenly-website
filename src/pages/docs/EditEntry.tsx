@@ -7,6 +7,7 @@ function EditEntry() {
     <div className='container'>
         <DocNavbar />
         <div className='doc-content'>
+          <div className='spacer'/>
           <h1>Editing an Entry</h1>
           <p>Welcome to the Edit Entry guide.</p>
         </div>
