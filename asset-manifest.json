@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/evenly-website/static/css/main.22b81ade.css",
-    "main.js": "/evenly-website/static/js/main.a822d5ea.js",
+    "main.css": "/evenly-website/static/css/main.4a68cf1c.css",
+    "main.js": "/evenly-website/static/js/main.8845e264.js",
     "static/js/488.c500de22.chunk.js": "/evenly-website/static/js/488.c500de22.chunk.js",
     "index.html": "/evenly-website/index.html",
-    "main.22b81ade.css.map": "/evenly-website/static/css/main.22b81ade.css.map",
-    "main.a822d5ea.js.map": "/evenly-website/static/js/main.a822d5ea.js.map",
+    "main.4a68cf1c.css.map": "/evenly-website/static/css/main.4a68cf1c.css.map",
+    "main.8845e264.js.map": "/evenly-website/static/js/main.8845e264.js.map",
     "488.c500de22.chunk.js.map": "/evenly-website/static/js/488.c500de22.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22b81ade.css",
-    "static/js/main.a822d5ea.js"
+    "static/css/main.4a68cf1c.css",
+    "static/js/main.8845e264.js"
   ]
 }
