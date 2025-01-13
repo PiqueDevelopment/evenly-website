@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 // Make sure to import the Doc Pages to route to
+import DocDownload from './pages/docs/Download.tsx';
 import GettingStarted from './pages/docs/GettingStarted.tsx';
 import AddEntry from './pages/docs/AddEntry.tsx';
 import EditEntry from './pages/docs/EditEntry.tsx';
@@ -11,6 +12,7 @@ import Errors from './pages/docs/Errors.tsx';
 function DocRoutes() {
     return (
       <Routes>
+        <Route path="downloads" element={<DocDownload />} />
         <Route path="getting-started" element={<GettingStarted />} />
         <Route path="add-entry" element={<AddEntry />} />
         <Route path="edit-entry" element={<EditEntry />} />

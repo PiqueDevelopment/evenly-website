@@ -46,12 +46,12 @@ function Navbar() {
                             </Link>
                         </li>
                         <li>
-                            <Link to='/download' className='nav-links-mobile' onClick={closeMobileMenu}>
+                            <Link to='/docs/downloads' className='nav-links-mobile' onClick={closeMobileMenu}>
                                 Get Evenly 
                             </Link>
                         </li>
                     </ul>
-                        {button && <Button to='/download' buttonStyle='btn--outline' children={undefined} type={undefined} onClick={undefined} buttonSize={undefined}>Get Evenly</Button>}
+                        {button && <Button to='/docs/downloads' buttonStyle='btn--outline' children={undefined} type={undefined} onClick={undefined} buttonSize={undefined}>Get Evenly</Button>}
                 </div>
             </nav>
         </>

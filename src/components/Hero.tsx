@@ -18,7 +18,7 @@ function Hero() {
       </p>
       <div className='hero-btns'>
         <Button to='/docs/getting-started' className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>Get Started</Button>
-        <Button to='/download' className='btns' buttonStyle='btn--download' buttonSize='btn--large'>Download <i className="fa fa-download"/> </Button>
+        <Button to='/docs/downloads' className='btns' buttonStyle='btn--download' buttonSize='btn--large'>Download <i className="fa fa-download"/> </Button>
       </div>
     </div>
   );

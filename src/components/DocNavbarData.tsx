@@ -1,7 +1,16 @@
 export const DocNavbarData = [
     {
+        title: "Download",
+        link: "/docs/downloads"
+        
+    },
+    {
         title: "Getting Started",
         link: "/docs/getting-started"
+    },
+    {
+        title: "divider", 
+        link: "#"
     },
     {
         title: "Add Entry",
@@ -26,5 +35,17 @@ export const DocNavbarData = [
     {
         title: "Errors and Troubleshooting",
         link: "/docs/errors"
+    },
+    {
+        title: "divider", 
+        link: "#"
+    },
+    {
+        title: "Changelog", 
+        link: "/docs/changelog"
+    },
+    {
+        title: "Contribute",
+        link: "/docs/contribute"
     }
 ]
