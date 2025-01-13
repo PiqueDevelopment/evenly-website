@@ -7,26 +7,22 @@ function Errors() {
     <DocLayout>
       <div className='spacer'/>
       <h1>Errors and Troubleshooting</h1>
-      <p>A guide to errors one may encounter while using our program.</p>
+      <p>A guide to errors you may encounter while using our program.</p>
       <hr className='doc-divider' />
-      <h2>Contribution Split</h2>
-      <h3>By Percentage &#x0028;&#x0025;&#x0029;</h3>
-      <p>This indicates the percent amount that each person contributed towards the Total Amount.</p>
-      <p><i>For example, if the Total Amount is $500 and Bob contributes 20% while Bill contributes 80%, then that means Bob contributed $100 while Bill contributed $400.</i></p>
-      <h3>By Dollar Amount &#x0028;$&#x0029;</h3>
-      <p>This indicates the dollar amount that each person contributed towards the Total Amount.</p>
-      <hr className='doc-divider' />
-      <h2>Balance Split</h2>
-      <p>Balance Split indicates the actual amount a person is deducted/owed in a bill.</p>
-      <p>This amount will be determined based on members of Who Paid &#x0028;if applicable&#x0029;.</p>
+      <h2>Form Submission</h2>
+      <h3>Requirements</h3>
+      <p>The program is strict on what should be in the forms. This includes the following:</p>
       <p>
-        <i>For example, Bob and Bill went to the store to buy a $500 crate. Bob paid $200 and Bill paid $300.</i>
-        <br />
-        <i>The Contribution Split between Bob, Bill, Joe, and John is $125 per person.</i>
-        <br />
-        <i>The Balance Split will be +$75 for Bob and $125 for Bill, and -$125 for Joe and John. This is because Bob and Bill overpaid the amount they were supposed contribute due to paying for the bill initially, and should therefore be reimbursed.</i>
+        <ul>
+          <li>The dollar amount amongst all contributors must sum to EXACTLY the total amount.</li>
+          <li>The percent amount amongst all contributors must sum to EXACTLY 100&#x25;.</li>
+          <li>There must be at least one member in the form.</li>
+          <li>There must be at least one member under the "Who Paid" section of the form.</li>
+          <li>Total "Who Paid" members summed together MUST equal the Total Amount.</li>
+        </ul>
       </p>
-      
+      <h3>Other Bugs</h3>
+      <p>Should you encounter any issues when running our code, please don't hestitate to reach out to us at piquedevelopment@gmail.com.</p>
       <div className='spacer'/>
     </DocLayout>
   );

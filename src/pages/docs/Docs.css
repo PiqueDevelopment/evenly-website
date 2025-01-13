@@ -83,6 +83,23 @@
     margin-right: 4%;
 }
 
+p a {
+    color: #8c96d0;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #96a2da;
+    text-decoration: underline;
+    transition: 1s ease;
+}
+
+p a:visited {
+    color: #8c96d0;
+    text-decoration: underline;
+}
+
+
 table {
     max-width: 70%;
     border-collapse: collapse;
