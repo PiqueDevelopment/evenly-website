@@ -1,46 +1,31 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './DocNavbar.css';
 import { DocNavbarData } from './DocNavbarData.tsx';
 
-function DocNavbar() {
+const DocNavbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
-    const sidebarRef = useRef(null);
 
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
-    };
-
-    const handleClickOutside = (event) => {
-        if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-            setSidebarOpen(false);
-        }
-    };
-
-    const handleScroll = () => {
-        if (sidebarRef.current) {
-            sessionStorage.setItem('sidebarScrollPosition', sidebarRef.current.scrollTop);
+        if (!sidebarOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
         }
     };
 
     useEffect(() => {
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, []);
-
-    useEffect(() => {
-        const savedScrollPosition = sessionStorage.getItem('sidebarScrollPosition');
-        if (sidebarRef.current && savedScrollPosition !== null) {
-            sidebarRef.current.scrollTop = parseInt(savedScrollPosition, 10);
+        if (sidebarOpen) {
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
         }
-    }, []);
+    }, [sidebarOpen]);
 
     return (
-        <div className={`container ${sidebarOpen ? '' : 'full-width'}`}>
-            {sidebarOpen && <div className="overlay" onClick={toggleSidebar}></div>}
-            <div ref={sidebarRef} className={`sidebar ${sidebarOpen ? 'active' : ''}`} onScroll={handleScroll}>
+        <div>
+            <div className={`sidebar ${sidebarOpen ? 'active' : ''}`}>
                 <ul className='sidebar-list'>
                     <li>
                         <NavLink 
@@ -48,7 +33,7 @@ function DocNavbar() {
                             className='sidebar-home'
                             activeClassName='active'
                         >
-                            Evenly <i class="fa-solid fa-file-invoice"></i>
+                            Evenly <i className="fa-solid fa-file-invoice"></i>
                         </NavLink>
                     </li>
                     {DocNavbarData.map((val, key) => (
@@ -68,11 +53,11 @@ function DocNavbar() {
                     ))}
                 </ul>
             </div>
-            <div className={`hamburger-menu ${sidebarOpen ? 'hidden' : ''}`} onClick={toggleSidebar}>
+            <div className="hamburger-menu" onClick={toggleSidebar}>
                 <i className='fas fa-bars'></i>
             </div>
         </div>
     );
-}
+};
 
 export default DocNavbar;

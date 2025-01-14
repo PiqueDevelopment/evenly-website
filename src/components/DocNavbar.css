@@ -126,6 +126,10 @@ hr.rounded {
     transition: background-color 0.3s ease;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 
 @media screen and (max-width: 768px) {
     .sidebar {
