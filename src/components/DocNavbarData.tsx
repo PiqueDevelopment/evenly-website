@@ -1,5 +1,9 @@
 export const DocNavbarData = [
     {
+        title: "divider", 
+        link: "#"
+    },
+    {
         title: "Download",
         link: "/docs/downloads"
         

@@ -48,10 +48,9 @@ function DocNavbar() {
                             className='sidebar-home'
                             activeClassName='active'
                         >
-                            Evenly <i className='fab fa-typo3'></i>
+                            Evenly <i class="fa-solid fa-file-invoice"></i>
                         </NavLink>
                     </li>
-                    <hr className='rounded' />
                     {DocNavbarData.map((val, key) => (
                         val.title === "divider" ? (
                             <li key={key} className='divider'></li>

@@ -8,6 +8,8 @@ import EditEntry from './pages/docs/EditEntry.tsx';
 import FileUpload from './pages/docs/FileUpload.tsx';
 import SplitTypes from './pages/docs/SplitTypes.tsx';
 import Errors from './pages/docs/Errors.tsx';
+import Changelog from './pages/docs/Changelog.tsx';
+import Contribute from './pages/docs/Contribute.tsx';
 
 function DocRoutes() {
     return (
@@ -19,6 +21,8 @@ function DocRoutes() {
         <Route path="file-upload" element={<FileUpload />} />
         <Route path="split-types" element={<SplitTypes />} />
         <Route path="errors" element={<Errors />} />
+        <Route path="changelog" element={<Changelog />} />
+        <Route path="contribute" element={<Contribute />} />
         {/* Add other doc routes here */}
       </Routes>
     );

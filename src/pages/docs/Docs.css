@@ -22,7 +22,10 @@
 .doc-content h2,
 .doc-content h3,
 .doc-content p,
-.doc-content li {
+.doc-content li,
+.doc-content i,
+.doc-content table{
+    margin-left: 20px;
     margin-right: 4%;
 }
 
@@ -62,16 +65,26 @@
     margin-top: -10px;
     margin-left: 30px;
     line-height: 1.8;
+    list-style: number;
 }
 
 .doc-content li {
-    list-style: number;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.doc-content .changelog-list{
+    margin-top: -10px;
+    margin-left: 30px;
+    line-height: 1.8;
+    list-style: disc;
 }
 
 .doc-content i {
     color: #999999;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+    font-style: italic; 
 }
 
 .doc-divider {
@@ -80,7 +93,8 @@
     background-color: rgb(58, 58, 58);
     border-radius: 5px;
     margin: 50px 0; 
-    margin-right: 4%;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .download-btns {
@@ -131,6 +145,7 @@ table {
     background-color: #3e341b;
     padding: 20px;
     border-radius: 20px;
+    margin-left: 4%;
     margin-right: 4%;
     border: 2px solid #4e4120;
     margin-bottom: 20px;
@@ -140,6 +155,7 @@ table {
     background-color: #373b53;
     padding: 20px;
     border-radius: 20px;
+    margin-left: 4%;
     margin-right: 4%;
     border: 2px solid #21253a;
     margin-bottom: 20px;
