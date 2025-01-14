@@ -25,6 +25,7 @@ const DocNavbar = () => {
 
     return (
         <div>
+            <div className={`overlay ${sidebarOpen ? 'active' : ''}`} onClick={toggleSidebar}></div>
             <div className={`sidebar ${sidebarOpen ? 'active' : ''}`}>
                 <ul className='sidebar-list'>
                     <li>
