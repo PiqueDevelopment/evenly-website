@@ -10,16 +10,14 @@ function GettingStarted() {
       <p>Essential information to get you started with Evenly.</p>
       <hr className='doc-divider' />
       <h2>Installation Guide</h2>
-      <p>To install Evenly, you can clone from the <a href="https://docs.google.com/spreadsheets/d/1ZwQydIuDscUfn_xbbTTBvyWUKxNd-zq6LInzsaIVC6U/edit?usp=sharing">master copy of the Google Sheets</a>.</p>
+      <p>To install Evenly, you can clone from the <a href="https://docs.google.com/spreadsheets/d/1ZwQydIuDscUfn_xbbTTBvyWUKxNd-zq6LInzsaIVC6U/copy">master copy of the Google Sheets</a>.</p>
       <h3>Cloning Google Sheets</h3>
       <p>
         <ul>
           <li>In your browser, ensure you are signed into the Google Account you would like to use.</li>
-          <li>Visit this Google Sheets to access the latest version of Evenly.</li>
-          <li>At the top, click on File &#x003E; Make a Copy. Select the location of where you want to save the file and then click on 'Make a Copy' at the bottom.</li>
-          <li>Enter a unique name. It is highly recommended to replace this template name, as you may not change it later.</li>
-          <li>Save it to anywhere on your Google Drive.</li>
-          <li>Open the copied file.</li>
+          <li>Visit the link above to access the latest version of Evenly.</li>
+          <li>Click on 'Make a Copy.' It will automatically open.</li>
+          <li>Rename the Google Spreadsheet. You may not change it later.</li>
         </ul>
       </p>
       {/* <h3>Google App Marketplace Extension</h3>

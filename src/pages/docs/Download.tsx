@@ -12,7 +12,7 @@ function DocDownload() {
       <p>The latest stable version of Evenly was released on 01/25/2025.</p>
       <p>The Google Apps Script is available via copying the template Google Spreadsheet. See below.</p>
       <div className='download-btns'>
-        <Button to='https://docs.google.com/spreadsheets/d/1ZwQydIuDscUfn_xbbTTBvyWUKxNd-zq6LInzsaIVC6U/edit?usp=drive_link' className='btn-docs-download' buttonStyle='btn--outline' buttonSize='btn--medium' target='_blank' rel='noopener noreferrer'>
+        <Button to='https://docs.google.com/spreadsheets/d/1ZwQydIuDscUfn_xbbTTBvyWUKxNd-zq6LInzsaIVC6U/copy' className='btn-docs-download' buttonStyle='btn--outline' buttonSize='btn--medium' target='_blank' rel='noopener noreferrer'>
           Download 
         </Button>
       </div>
